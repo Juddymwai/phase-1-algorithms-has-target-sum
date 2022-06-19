@@ -1,5 +1,13 @@
 function hasTargetSum(array, target) {
+  
   // Write your algorithm here
+  const present= {}
+  for (item of array){
+    let result =target - item
+    return array.includes(result)
+    
+  
+  }
 }
 
 /* 
@@ -23,7 +31,7 @@ if (require.main === module) {
   console.log("");
 
   console.log("Expecting: true");
-  console.log("=>", hasTargetSum([22, 19, 4, 6, 30], 25));
+  console.log("=>", hasTargetSum([6, 19, 4, 22, 30], 25));
 
   console.log("");
 
